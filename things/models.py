@@ -8,6 +8,7 @@ class Thing(models.Model):
         get_user_model(), on_delete=models.CASCADE, null=True, blank=True
     )
     description = models.TextField(default="", null=True, blank=True)
+    url = models.URLField()
 
     def __str__(self):
         return self.name
